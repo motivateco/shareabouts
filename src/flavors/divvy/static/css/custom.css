@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'gtPressuraBold';
+    src: url('fonts/gt-pressura-bold-web-webfont.eot');
+    src: url('fonts/gt-pressura-bold-web-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gt-pressura-bold-web-webfont.woff') format('woff'),
+         url('fonts/gt-pressura-bold-web-webfont.ttf') format('truetype'),
+         url('fonts/gt-pressura-bold-web-webfont.svg#gt_pressurabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gtPressuraLight';
+    src: url('fonts/gt-pressura-light-web-webfont.eot');
+    src: url('fonts/gt-pressura-light-web-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gt-pressura-light-web-webfont.woff') format('woff'),
+         url('fonts/gt-pressura-light-web-webfont.ttf') format('truetype'),
+         url('fonts/gt-pressura-light-web-webfont.svg#gt_pressuralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gtPressuraMonoBold';
+    src: url('fonts/gt-pressura-mono-bold-web-webfont.eot');
+    src: url('fonts/gt-pressura-mono-bold-web-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gt-pressura-mono-bold-web-webfont.woff') format('woff'),
+         url('fonts/gt-pressura-mono-bold-web-webfont.ttf') format('truetype'),
+         url('fonts/gt-pressura-mono-bold-web-webfont.svg#gt_pressura_monobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gtPressuraRegular';
+    src: url('fonts/gt-pressura-regular-web-webfont.eot');
+    src: url('fonts/gt-pressura-regular-web-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gt-pressura-regular-web-webfont.woff') format('woff'),
+         url('fonts/gt-pressura-regular-web-webfont.ttf') format('truetype'),
+         url('fonts/gt-pressura-regular-web-webfont.svg#gt_pressuraregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, p { text-rendering: auto; }
+/*@import url("http://divvybikes.com/assets/css/chicago/fonts.css?c=943941600");*/
+
+/* Base Typography */
+body, select, input, textarea {
+  color: #000;
+  font-family: gtPressuraLight, sans-serif;
+}
+body {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.05em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: gtPressuraMonoBold, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+}
+h4, h5, h6 {
+  font-family: gtPressuraBold, sans-serif;
+  letter-spacing: 1px;
+}
+strong {
+  font-family: gtPressuraBold, sans-serif;
+  font-weight: normal;
+}
+#content {
+  line-height: 1.6;
+}
+
+/* Links */
+a, a:active, a:visited {
+  color: #1da0d1;
+}
+a:hover {
+  color: #3db7e4;
+}
+.btn,
+.btn:visited,
+.btn:link {
+  background-color: #3db7e4;
+  color: #f0f0f0;
+  font-weight: normal;
+  text-shadow: none;
+  border: 0;
+  border-radius: 4px;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #1da0d1;
+}
+a.close-btn {
+  color: #ff5e99;
+}
+
+#add-place-btn-container {
+  background: #eee;
+  border-bottom-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.1);
+}
+#add-place {
+  color: #f0f0f0;
+  background-color: #1da0d1;
+  font-family: gtPressuraBold, sans-serif;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+#add-place:hover {
+  color: #fff;
+  background-color: #3db7e4;
+}
+
+/* Site Header */
+#site-header {
+  background-color: #3db7e4;
+  border-bottom: 2px solid #2FCAFC;
+}
+#site-header .btn,
+#site-header .btn:visited,
+#site-header .btn:link {
+  box-shadow: none;
+  border-radius: 0;
+  color: #fff;
+}
+
+#site-logo {
+  height: 0.75em;
+  width: auto;
+  margin-top: 0.25em;
+}
+
+/* Navigation */
+a#nav-btn:link,
+a#nav-btn:visited {
+  background: #1da0d1;
+  color: #eee;
+  font-family: "Helvetica Neue", Arial, Helvetica, serif;
+  text-shadow: none;
+}
+.access {
+  font-family: gtPressuraBold, sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.125em;
+}
+#sign-in-btn {
+  color: #fff;
+  font-family: gtPressuraBold, sans-serif;
+  font-weight: normal;
+}
+
+/* Progress Bar */
+.progress-bar span {
+  background: #1da0d1;
+}
+
+/* The Ticker */
+#ticker {
+  background: #eee;
+}
+.recent-points a {
+  color: #333;
+  border-top-color: transparent;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: transparent;
+  border-bottom-color: rgba(0,0,0,0.1);
+}
+.recent-points a:hover {
+  background: #3db7e4;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* Forms */
+label {
+  font-size: 0.875em;
+  color: #777;
+  margin-right: 0.125em;
+}
+.checkbox-prompt {
+  margin-bottom: 0;
+}
+.checkbox {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0 1em 0 0;
+}
+.checkbox label {
+  font-family: gtPressuraMonoBold, sans-serif;
+  font-weight: normal;
+}
+.checkbox input {
+  outline: 0;
+}
+.checkbox + .text {
+  margin-top: 1em;
+}
+
+.drag-marker-instructions {
+  font-family: gtPressuraBold, sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.25;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+/* Place Details */
+.place-header-prompt {
+  display: block;
+  font-size: 0.5em;
+  font-family: gtPressuraBold, sans-serif;
+  letter-spacing: 0.05em;
+}
+.existing-station-name,
+.planned-station-name {
+  padding-left: 50px;
+  background: url(images/marker-station-existing.png) left top no-repeat scroll;
+}
+.planned-station-name {
+  background: url(images/marker-station-planned.png) left top no-repeat scroll;
+}
+.existing-station-details,
+.planned-station-details {
+  display: none;
+}
+.place-items {
+  padding-bottom: 1.5em;
+}
+.place-value-description {
+  font-family: gtPressuraRegular, sans-serif;
+}
+.place-items .place-item-description:after {
+  content: "I'd use this location for: ";
+  float: left;
+  color: #888;
+  margin-right: 0.5em;
+}
+.place-item-work,
+.place-item-shopping,
+.place-item-fun,
+.place-item-home,
+.place-value-work,
+.place-value-shopping,
+.place-value-fun,
+.place-value-home {
+  display: inline;
+  font-family: gtPressuraRegular, sans-serif;
+}
+.place-item-zip {
+  display: none;
+}
+
+/* Voting & Social Promotion */
+#user_support label {
+  color: #fff;
+  font-size: 1.25em;
+  font-family: gtPressuraBold, sans-serif;
+  font-weight: normal;
+}
+#user_support:hover label {
+  background-color: #1da0d1; /* match .btn color */
+}
+
+.reply-link {
+  color: #fff;
+  font-family: gtPressuraBold, sans-serif;
+  font-weight: normal;
+}
+
+/* Powered By */
+#powered-by {
+  letter-spacing: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+a.shareabouts-logo {
+  color: #a3c7d9 !important;
+  font-weight: bold !important;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 60em) {
+
+  #site-header {
+    padding-left: 3em;
+    background-color: #3db7e4;
+  }
+  .access {
+    font-size: 1.125em;
+  }
+  .access .menu {
+    margin-top: -0.325em;
+  }
+  #site-header .btn,
+  #site-header .btn:visited,
+  #site-header .btn:link {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #add-place-btn-container {
+    font-size: 1.75em;
+  }
+
+}

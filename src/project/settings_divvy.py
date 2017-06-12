@@ -1,7 +1,7 @@
 # Django settings for project project.
 import datetime
 import os.path
-
+print "WOOOO"
 HERE = os.path.dirname(__file__)
 
 DEBUG = True
@@ -254,8 +254,9 @@ if 'REDIS_URL' in env or 'REDISCLOUD_URL' in env:
     BROKER_URL = redis_url.strip('/') + '/1'
 
 SHAREABOUTS = {}
-if 'SHAREABOUTS_FLAVOR' in env:
-    SHAREABOUTS['FLAVOR'] = env.get('SHAREABOUTS_FLAVOR')
+
+SHAREABOUTS['FLAVOR'] = "divvy"
+
 if 'SHAREABOUTS_DATASET_ROOT' in env:
     SHAREABOUTS['DATASET_ROOT'] = env.get('SHAREABOUTS_DATASET_ROOT')
 if 'SHAREABOUTS_DATASET_KEY' in env:
@@ -339,7 +340,7 @@ RAVEN_CONFIG = {
 # ------------------------
 # Override settings values by importing the local_settings.py module.
 
-LOCAL_SETTINGS_FILE = os.path.join(os.path.dirname(__file__), 'local_settings.py')
+LOCAL_SETTINGS_FILE = os.path.join(os.path.dirname(__file__), 'local_settings_divvy.py')
 if os.path.exists(LOCAL_SETTINGS_FILE):
     # By doing this instead of import, local_settings.py can refer to
     # local variables from settings.py without circular imports.

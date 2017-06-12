@@ -37,3 +37,8 @@ src/project/config.yml
 
 # sqlite database
 *.db
+
+.DS_Store
+.vagrant
+vagrantenv/
+env/
