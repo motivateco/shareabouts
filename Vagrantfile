@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu/trusty64"
-  config.vm.network "forwarded_port", guest: 80, host: 4567, auto_correct: true
+  config.vm.network "forwarded_port", guest: 80, host: 4000, auto_correct: true
   config.vm.synced_folder ".", "/var/www",
     :owner => 'www-data',
     :group => 'www-data',

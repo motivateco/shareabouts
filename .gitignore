@@ -42,3 +42,8 @@ src/project/config.yml
 .vagrant
 vagrantenv/
 env/
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
