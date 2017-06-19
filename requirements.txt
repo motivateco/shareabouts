@@ -1,98 +1,118 @@
-amqp==1.4.9
-anyjson==0.3.3
-awscli==1.11.96
-awsebcli==3.10.2
-backports.ssl-match-hostname==3.5.0.1
-billiard==3.3.0.23
-blessed==1.14.2
-boto==2.27.0
-botocore==1.5.65
-celery==3.1.17
-cement==2.8.2
-certifi==2017.4.17
-chardet==3.0.4
-CherryPy==3.8.2
-click==6.7
-colorama==0.3.7
-contextlib2==0.5.5
-dj-database-url==0.2.2
+# The server
 dj-static==0.0.6
+
+# Templates
+django-jstemplate>=1.3.6
+django_compressor==1.6
+
+# Web interface helpers
+django-proxy>=1.0.2
+httpagentparser
+
+# Config
+pyyaml
+django-extensions
+
+# Testing
+jasmine
+
+
+#=============================================================#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+#               Shareabouts API Dependencies                  #
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - #
+#=============================================================#
+
+
+git+https://github.com/openplans/shareabouts-api.git@beabf760#shareabouts-api
+
+
+# ==============================
+# Web server
+# ==============================
+
 Django==1.7.11
-django-ace==1.0.1
-django-appconf==1.0.2
-django-celery==3.1.16
-django-compressor==1.6
-django-cors-headers==0.12
-django-debug-toolbar==1.2.1
-django-extensions==1.7.9
-django-jstemplate==1.3.8
-django-nose==1.4.4
-django-oauth2-provider==0.2.6
-django-object-actions==0.4.0
-django-proxy==1.0.2
-django-redis==3.5.1
-django-storages==1.1.8
-djangorestframework==2.3.12
-djangorestframework-bulk==0.1.3
-djangorestframework-csv==1.3.0
-docker-py==1.7.2
-dockerpty==0.4.1
-docopt==0.6.2
-docutils==0.13.1
-Flask==0.12.2
-funcsigs==1.0.2
-futures==3.1.1
 gevent==1.1.2
-glob2==0.5
-greenlet==0.4.12
 gunicorn==18.0
-httpagentparser==1.7.9
-idna==2.5
-itsdangerous==0.24
-jasmine==2.6.0
-jasmine-core==2.6.3
-Jinja2==2.9.6
-jmespath==0.9.3
-kombu==3.0.37
-Markdown==2.6.8
-MarkupSafe==1.0
-mock==2.0.0
-mock-django==0.6.10
 newrelic==2.16.0.12
-nose==1.3.7
-oauthlib==2.0.2
-ordereddict==1.1
-pathspec==0.5.0
-pbr==3.0.1
-psycogreen==1.0
+
+
+
+# ==============================
+# Background processing
+# ==============================
+
+celery==3.1.17
+django-celery==3.1.16
+
+
+
+# ==============================
+# Database and Persistence
+# ==============================
+
+# DB Settings and Management
 psycopg2==2.5.1
-pyasn1==0.2.3
-python-dateutil==2.6.0
-python-openid==2.2.5
+psycogreen==1.0
+south==1.0.1
+dj-database-url==0.2.2
+django-object-actions==0.4.0
+
+# Caching
+django-redis==3.5.1
+
+# File Storage
+boto==2.27.0
+django-storages==1.1.8
+
+
+
+# ==============================
+# User Accounts and Social Media
+# ==============================
+
 python-social-auth==0.1.23
-pytz==2017.2
-PyYAML==3.12
-raven==5.19.0
-redis==2.10.5
-requests==2.9.1
-requests-oauthlib==0.8.0
-responses==0.2.2
-rsa==3.4.2
-s3transfer==0.1.10
-selenium==2.53.6
-semantic-version==2.5.0
-shareabouts-api==2.4.0
-shortuuid==0.5.0
-six==1.10.0
-South==1.0.1
-sqlparse==0.2.3
-static3==0.7.0
-tabulate==0.7.5
-termcolor==1.1.0
+# Use fork of oauth2-provider, for Django 1.7 compatibility
+# django-oauth2-provider==0.2.6.1
+git+https://github.com/glassresistor/django-oauth2-provider.git@4269205#egg=django-oauth2-provider
+django-cors-headers==0.12
+
+
+
+# ==============================
+# REST API
+# ==============================
+
+djangorestframework==2.3.12
+djangorestframework-csv==1.3.0
+git+https://github.com/mjumbewu/django-rest-framework-bulk.git@84a5d6c#egg=djangorestframework-bulk==0.1.3
+six>=1.4.1
+markdown  # For browsable API docs
+python-dateutil==2.2
 ujson==1.33
-urllib3==1.21.1
-URLObject==2.4.3
-virtualenv==15.1.0
-wcwidth==0.1.7
-websocket-client==0.40.0
-Werkzeug==0.11.1
+
+# The Django admin interface
+django-ace==1.0.1
+
+# The manager interface
+requests>=1.2.0
+
+
+
+# ==============================
+# Testing, validating, and debugging
+# ==============================
+
+nose
+django-nose
+mock
+mock_django
+responses==0.2.2
+django-debug-toolbar==1.2.1
+raven==5.19.0  # For Sentry error logging
+
+
+# - - - - - - - - - - - - - - - -
+
+# For DRF 0.4 (deprecated)
+URLObject>=0.6.0
