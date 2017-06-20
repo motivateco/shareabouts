@@ -1,7 +1,7 @@
 # Django settings for project project.
 import datetime
 import os.path
-print "WOOOO"
+
 HERE = os.path.dirname(__file__)
 
 DEBUG = True
