@@ -2,9 +2,9 @@
 import datetime
 import os.path
 
-SHAREABOUTS_DATASET_KEY = "ZjMzOWE5MmQwNmI1ZThmYzlmNzk0OTI1"
-SHAREABOUTS_DATASET_ROOT = "http://shareaboutsapi-alta.herokuapp.com/api/v2/opstools/datasets/divvy/"
-SHAREABOUTS_FLAVOR = "divvy"
+SHAREABOUTS_DATASET_KEY = "DATASET_KEY"
+SHAREABOUTS_DATASET_ROOT = "https://DATASET_ROOT_URL/"
+SHAREABOUTS_FLAVOR = "FLAVOR_NAME"
 
 HERE = os.path.dirname(__file__)
 

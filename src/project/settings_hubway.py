@@ -2,6 +2,10 @@
 import datetime
 import os.path
 
+SHAREABOUTS_DATASET_KEY = "ZTFiODg2OTc5NGE0MzUzZTQxNmI3ODVi"
+SHAREABOUTS_DATASET_ROOT = "http://shareaboutsapi.poepublic.com/api/v2/motivateco/datasets/hubway"
+SHAREABOUTS_FLAVOR = "hubway"
+
 HERE = os.path.dirname(__file__)
 
 DEBUG = True
@@ -255,12 +259,9 @@ if 'REDIS_URL' in env or 'REDISCLOUD_URL' in env:
 
 SHAREABOUTS = {}
 
-SHAREABOUTS['FLAVOR'] = "hubway"
-
-if 'SHAREABOUTS_DATASET_ROOT' in env:
-    SHAREABOUTS['DATASET_ROOT'] = env.get('SHAREABOUTS_DATASET_ROOT')
-if 'SHAREABOUTS_DATASET_KEY' in env:
-    SHAREABOUTS['DATASET_KEY'] = env.get('SHAREABOUTS_DATASET_KEY')
+SHAREABOUTS['FLAVOR'] = SHAREABOUTS_FLAVOR
+SHAREABOUTS['DATASET_ROOT'] = SHAREABOUTS_DATASET_ROOT
+SHAREABOUTS['DATASET_KEY'] = SHAREABOUTS_DATASET_KEY
 
 if all([key in env for key in ('SHAREABOUTS_AWS_KEY',
                                    'SHAREABOUTS_AWS_SECRET',
