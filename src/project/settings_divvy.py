@@ -3,7 +3,7 @@ import datetime
 import os.path
 
 SHAREABOUTS_DATASET_KEY = "ZjMzOWE5MmQwNmI1ZThmYzlmNzk0OTI1"
-SHAREABOUTS_DATASET_ROOT = "http://shareaboutsapi-alta.herokuapp.com/api/v2/opstools/datasets/divvy/"
+SHAREABOUTS_DATASET_ROOT = "http://shareabouts-api-producton.us-east-1.elasticbeanstalk.com/api/v2/opstools/datasets/divvy/"
 SHAREABOUTS_FLAVOR = "divvy"
 
 HERE = os.path.dirname(__file__)
