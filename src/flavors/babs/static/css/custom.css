@@ -1,0 +1,567 @@
+/* =Color Palette
+-------------------------------------------------------------- */ /*
+
+  #33CBFF   lighter blue
+  #0095D7   light blue
+  #005dab   dark blue
+  #004f91   darker blue
+  */
+
+
+/* =Base Styles
+-------------------------------------------------------------- */
+
+/* Links */
+a, a:active, a:visited {
+  color: #0095D7;
+}
+a:hover {
+  color: #33CBFF;
+}
+
+/* Typography */
+body, select, input, textarea {
+  color: #555;
+  font-family: Arial, sans-serif;
+}
+
+/* Buttons */
+.btn,
+.btn:visited,
+.btn:link {
+/*  text-transform: uppercase;*/
+/*  font-weight: 600;*/
+/*  border-radius: 3px;*/
+/*  font-family: Arial, sans-serif;*/
+/*  font-weight: 400;*/
+  background-color: #0095D7;
+  color: #fff;
+/*  border: 0;*/
+  border-color: transparent;
+}
+.btn:hover, .button:hover, button:hover {
+  background-color: #33CBFF;
+}
+.btn-primary, .btn-primary:visited, .btn-primary:link {
+  background-color: #004f91;
+  color: #fff;
+/*  font-weight: 700;*/
+}
+.btn-primary:hover {
+  background-color: #005dab;
+}
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:link {
+  background-color: #0095D7;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #33CBFF;
+  color: #fff;
+}
+
+/* Forms */
+label {
+  font-family: Arial, sans-serif;
+}
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+  border-color: #ddd;
+}
+input:focus,
+textarea:focus {
+  border-color: #33CBFF;
+  outline: 2px solid #33CBFF;
+}
+
+.form-submitted input:invalid,
+.form-submitted textarea:invalid,
+.form-submitted select:invalid {
+  outline: 2px solid #b2182b;
+}
+
+/* hiding comment fields at end of submissions */
+
+div #reply {
+  display: none;
+}
+
+a.reply-link.btn.btn-small {
+  display: none;
+}
+.survey-header {
+  display: none;
+}
+
+/* =Header
+-------------------------------------------------------------- */
+
+#site-header {
+  color: inherit;
+  background-color: #005dab;
+  min-height: 3em;
+}
+#site-title {
+  color: #eee;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  text-shadow: 1px -1px 1px rgba(0,0,0,0.5);
+  max-width: 58%;
+  margin: 0;
+}
+#site-title a:link,
+#site-title a:visited {
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.2;
+  display: inline-block;
+  max-width: 8.5em;
+}
+#site-title a:hover {
+  color: #fff;
+}
+.site-logo {
+  display: inline-block;
+  max-height: 1.75em;
+  width: auto;
+  margin-right: 1.5em;
+}
+
+#babs-logo {
+  display: block;
+  height: 0.75em;
+  margin: 0.2em 0.25em 0 0;
+}
+.site-icon {
+  display: none;
+}
+
+@media only screen and (min-width: 60em) {
+  #site-title {
+    max-width: none;
+    margin-right: 0.5em;
+    margin-left: -0.5em;
+  }
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1.75em;
+  }
+  .site-logo {
+    max-height: 2em;
+  }
+}
+
+/* Navigation Button */
+#nav-btn {
+  font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
+  background: #004f91;
+  color: #0095D7;
+  text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
+}
+
+/* User Menu */
+#sign-in-btn {
+  color: #BFEFFF;
+  font-weight: 700;
+}
+#sign-in-btn:hover {
+  color: #33CBFF;
+}
+a.logout-btn {}
+
+
+/* =Geocoding
+-------------------------------------------------------------- */
+
+#geocode-address-bar {
+  background-color: #004f91;
+}
+input.geocode-address-field {
+  background-color: #004178;
+}
+
+
+/* =Map
+-------------------------------------------------------------- */
+
+/* Add Place Button */
+#add-place-btn-container {
+  background: #0095D7;
+  border-bottom: 1px solid #0095D7;
+}
+
+/* Drag Marker Instructions (for adding a new place) */
+.drag-marker-instructions,
+.drag-marker-warning {
+/*  background-color: rgba(240,240,0,0.2);*/
+/*  color: #444;*/
+}
+.drag-marker-warning {
+/*  background-color: rgba(242, 206, 206, 0.8);*/
+}
+
+/* Ajax Error Message */
+#ajax-error-msg {
+/*  color: #8D5251;*/
+/*  border: 1px solid #CFABAB;*/
+/*  background-color: rgba(242, 206, 206, 0.8);*/
+}
+
+
+/* =Progress Bars
+-------------------------------------------------------------- */
+
+.progress-bar {
+/*  background: rgba(85,85,85,0.5);*/
+}
+.progress-bar strong {
+/*  color: #fff;*/
+/*  text-shadow: 0 0 0.25em rgba(85,85,85,1);*/
+}
+.progress-bar span {
+/*  background: #00aaff;*/
+}
+
+
+/* =Content: Pages & Places
+-------------------------------------------------------------- */
+
+#content {
+/*  background: #fff;*/
+}
+
+/* Close Button */
+a.close-btn {
+  font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
+  background: #fff;
+  color: #ff5e99;
+}
+a.close-btn:hover {
+  color: #cd2c67;
+}
+
+/* Promotion: Voting & Sharing */
+.promotion {
+  float: none;
+}
+.support .btn, .support .btn:visited, .support .btn:link {
+  border-width: 0.5em;
+  font-size: 1em;
+  text-align: left;
+/*  display: inline-block;*/
+/*  width: auto;*/
+}
+.user-support label {
+  color: #fff;
+  padding-left: 30px;
+}
+.user-support input[type=checkbox]:checked ~ label {
+}
+.user-support:hover label {
+  background-color: #33CBFF;
+  color: #fff;
+}
+.sharing {
+  float: left;
+  width: 100%;
+}
+.share-link {
+  margin: 0;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.share-link a {
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: -0.25em 0.25em 0 rgba(0,0,0,0.1);
+}
+.share-link a:after {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32px;
+  font-size: 0.75em;
+  line-height: 32px;
+  text-indent: 0;
+}
+.share-facebook {
+  padding-right: 5px !important;
+}
+.share-facebook a {
+  background-color: #3c5a94;
+}
+.share-facebook a:after {
+  content: 'Facebook';
+  padding-left: 26px;
+}
+.share-twitter {
+  padding-left: 5px !important;
+}
+.share-twitter a {
+  background-color: #25abdd;
+}
+.share-twitter a:after {
+  content: 'Twitter';
+  padding-left: 30px;
+}
+
+/* Places */
+.place-header h1 {
+  font-size: 1.375em;
+  margin-bottom: 0.75em;
+}
+
+.response-date {
+/*  text-transform: uppercase;*/
+  color: #555;
+}
+.response-date a {
+  color: #555;
+}
+.response-date a:hover {
+  color: #33CBFF;
+}
+
+/* Checkboxes for survey */
+
+.checkbox {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin: 0 1em 0 0;
+}
+.checkbox label {
+  font-family: gtPressuraMonoBold, sans-serif;
+  font-weight: normal;
+}
+.checkbox input {
+  outline: 0;
+}
+.checkbox + .text {
+  margin-top: 1em;
+}
+
+/* display of check boxes */
+.place-items .place-item-description:after {
+  content: "I'd use this location for: ";
+  float: left;
+  color: #888;
+  margin-right: 0.5em;
+}
+.place-item-work,
+.place-item-shopping,
+.place-item-fun,
+.place-item-home,
+.place-value-work,
+.place-value-shopping,
+.place-value-fun,
+.place-value-home {
+  display: inline;
+}
+
+/* Surveys */
+.response-body {
+/*  border-top-color: #a8a8a8;*/
+/*  border-right-color: #c8c8c8;*/
+/*  border-left-color: #c8c8c8;*/
+/*  background: #eee;*/
+}
+.response-body:after {
+/*  border-top-color: #eee;*/
+}
+
+
+/* =The Ticker
+-------------------------------------------------------------- */
+
+#ticker {
+  background-color: #33CBFF;
+}
+.legend {
+  padding: 0.75em 0.75em 0.5em;
+}
+.legend ul {
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 3px;
+  box-shadow: -0.325em 0.325em 0 rgba(0,0,0,0.1);
+}
+.legend li {
+  line-height: 35px;
+  clear: left;
+  font-size: 0.85em;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+.legend li + li {
+  margin-top: 0.5em;
+}
+.legend li img {
+  float: left;
+  margin-right: 0.5em;
+}
+.recent-points a {
+  color: #fff;
+  border-top: 1px solid #80DFFF;
+  border-bottom: 1px solid #00ABE6;
+}
+.recent-points a:hover {
+  color: #fff;
+  background: #0095D7;
+  border-color: rgba(0,0,0,0.1);
+}
+
+
+/* =List View
+-------------------------------------------------------------- */
+
+#list-container {
+}
+
+/* Search & Sort */
+.list-sort-menu {
+}
+.list-sort-prompt {
+}
+.list-sort-menu a {
+}
+.list-sort-menu a.is-selected {
+  color: #555;
+}
+
+/* Place List */
+.place-list > li {
+  border-top: 1px solid #ddd;
+}
+
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon {
+  background-color: #005dab;
+  color: #ddd;
+}
+
+/* Powered By - Please do not change these. */
+a.shareabouts-logo {
+  font-family: 'Dancing Script', cursive;
+  color: #a3c7d9;
+}
+a.shareabouts-logo:hover {
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+#powered-by a.openplans-logo {
+  font-family: "Helvetica Neue", Arial, Helvetica, serif;
+  color: #ffb885;
+}
+#powered-by a.openplans-logo:hover {
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-height: 440px) and (max-width: 60em) {
+}
+
+@media only screen and (min-height: 568px) and (max-width: 60em) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 60em) {
+}
+
+@media only screen and (min-width: 60em) {
+  .access li:hover > ul,
+  .access li:hover > form > ul {
+/*    background: #ccc;*/
+/*    border-color: rgba(0,0,0,0.05);*/
+  }
+  .sign-in-menu {
+    background: #BFEFFF;
+  }
+  .sign-in-menu:before {
+    border-bottom-color: #BFEFFF;
+  }
+
+  #add-place-btn-container {
+    background: transparent;
+    border-bottom: 0;
+  }
+
+  .list-toggle-nav {
+    float: left;
+  }
+  .list-toggle-btn,
+  .list-toggle-btn:visited,
+  .list-toggle-btn:link {
+    min-width: 11.5em;
+    background-color: #0095D7;
+    color: #fff;
+  }
+  .list-toggle-btn:hover {
+    background-color: #33CBFF;
+    color: #fff;
+  }
+  .show-the-map:before {
+    content: '\27A4';
+    margin: 0 0.375em;
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 30% 60%;
+        -ms-transform-origin: 30% 60%;
+            transform-origin: 30% 60%;
+
+  }
+  .show-the-list:before {
+    content: '\2630';
+    margin: 0 0.375em;
+    text-shadow: -0.25em 0 0 #0095D7, -0.25em -1px 0 #0095D7, -0.25em 1px 0 #0095D7, -0.375em 0 0 #fff;
+  }
+  .list-toggle-btn:hover .show-the-list:before {
+    text-shadow: -0.25em 0 0 #33CBFF, -0.25em -1px 0 #33CBFF, -0.25em 1px 0 #33CBFF, -0.375em 0 0 #fff;
+  }
+  #geocode-address-bar {
+    border-right: 1px solid #004f91;
+  }
+
+  /* narrower content area */
+  .activity-enabled #content { left: 47%; }
+  .activity-enabled.content-visible #map-container { width: 47%; }
+
+}
+
+@media only screen and (min-width: 80em) {
+
+  /* narrower content area */
+  .activity-enabled #content { left: 55%; }
+  .activity-enabled.content-visible #map-container { width: 55%; }
+
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+}
+
+/* .or-sign-in { display:none;}
+.user-menu {display:none;} */
