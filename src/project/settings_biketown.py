@@ -3,7 +3,7 @@ import datetime
 import os.path
 
 SHAREABOUTS_DATASET_KEY = "MWM5YjkwZDRhMWI4YTU2ODUwMDk3OTRi"
-SHAREABOUTS_DATASET_ROOT = "http://shareabouts-api-producton.us-east-1.elasticbeanstalk.com/api/v2/motivateco/datasets/biketown"
+SHAREABOUTS_DATASET_ROOT = "http://shareabouts-api-production.us-east-1.elasticbeanstalk.com/api/v2/motivateco/datasets/biketown"
 SHAREABOUTS_FLAVOR = "biketown"
 
 HERE = os.path.dirname(__file__)
