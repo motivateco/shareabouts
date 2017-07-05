@@ -1,0 +1,60 @@
+          {{#if survey_config.single_submission}}
+            {{^if user_submitted}}
+              {{>place-survey-form}}
+            {{else}}
+              {{>place-survey-response}}
+            {{/if}}
+          {{else}}
+            {{>place-survey-form}}
+          {{/if}}
+
+          <h4 class="survey-header">
+            {{!-- If there are responses to the survey already, then the
+                  number of responses will be shown. Otherwise, a prompt
+                  to leave a response is shown. --}}
+            {{#if survey_config.show_responses}}
+              {{#if responses}}
+                {{ responses.length }} 
+                {{# has_single_response }} response {{/ has_single_response }}
+                {{^ has_single_response }} responses {{/ has_single_response }}
+              {{else if survey_config.adding_supported}}
+                {{survey_config.form_link_text}}
+              {{/if}}
+            {{else}}
+              {{#if survey_config.adding_supported}}
+                {{survey_config.form_link_text}}
+              {{/if}}
+            {{/if}}
+          </h4>
+
+          {{!-- If there are already responses to the survey, a button/link
+                will be shown that, when clicked, should focus on the first
+                field in the survey form. --}}
+          {{#if responses}}
+            {{#if survey_config.single_submission}}
+              {{^if user_submitted}}
+              {{/if}}
+            {{/if}}
+          {{/if}}
+
+          {{#if survey_config.show_responses}}
+          <ol class="responses unstyled-list">
+            {{#responses}}
+            <li>
+              <article data-response-id="{{ id }}" class="response">
+                
+			  {{ submitter_name }}
+			  <span class="response-date">
+                  around {{ pretty_created_datetime }}
+                </span>
+				<ul>
+					<li><strong>Good spot?</strong> {{ good_spot }}</li>
+					<li><strong>Why?</strong> {{ why_good }} {{ why_bad }}</li>
+					{{#if comments}} <li> {{ comments }} </li> {{/if}}
+				</ul>
+
+              </article>
+            </li>
+            {{/responses}}
+          </ol>
+          {{/if}} {{! survey_config.show_responses }}

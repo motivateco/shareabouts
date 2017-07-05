@@ -1,0 +1,615 @@
+/*
+ * All rules herein will override the default Shareabouts styles.
+ * "With great power comes great responsibility."
+ */
+
+
+/* =Base Styles
+-------------------------------------------------------------- */
+
+body {
+  background-color: #3B65A1;
+}
+
+/* Links */
+a, a:active, a:visited {
+  color: #4475BA;
+}
+a:hover {
+  color: #3979D4;
+}
+
+/* Typography */
+body, select, input, textarea {
+  color: #444;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Arial", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+/* Buttons */
+.btn,
+.btn:visited,
+.btn:link {
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: "Arial", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  background-color: #FC4C02;
+  color: #fff;
+/*  border: 0;*/
+  border-color: transparent;
+}
+.btn:hover, .button:hover, button:hover {
+  background-color: #000;
+}
+.btn-primary, .btn-primary:visited, .btn-primary:link {
+  background-color: #FC4C02;
+  color: #fff;
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background-color: #287AED;
+}
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:link {
+  background-color: #fff;
+  color: #FC4C02;
+}
+.btn-secondary:hover {
+  background-color: #fff;
+  color: #444;
+}
+.btn-disabled,
+.btn-disabled:visited,
+.btn-disabled:link,
+.btn-disabled:hover {
+  background-color: #eee;
+  color: #ccc;
+  box-shadow: none;
+}
+
+/* Forms */
+label {
+  font-family: "Arial Narrow", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+  color: inherit;
+}
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
+  outline: 0;
+  border: 0.25em solid #a3c7d9;
+}
+input:focus,
+textarea:focus {
+  border: 0.25em solid #007fbf;
+  outline: 2px solid #007fbf;
+}
+
+/* Old IE does not like this to be combine with :invalid rules.
+   It will ignore it! */
+.form-submitted .gatekeeper-invalid ~ label {
+  border: 2px solid #b2182b;
+}
+.form-submitted .gatekeeper-invalid ~ .validation-message {
+  display: block;
+}
+.form-submitted .gatekeeper-invalid {
+  outline: none;
+}
+
+.form-submitted input:invalid ~ label,
+.form-submitted textarea:invalid ~ label,
+.form-submitted select:invalid ~ label {
+  box-shadow: 0px 0px 2px 2px #b2182b;
+}
+
+.survey-label {
+  margin-bottom: 1.125em;
+  display: inline-block;
+}
+label.survey-label {
+  font-size: 1.125em;
+}
+
+.validation-message {
+  text-transform:uppercase;
+  padding: 0 0.4em;
+  background-color: rgba(178, 24, 43, 0.1);
+  border-radius: 2px;
+  color: #b2182b;
+  font-size:0.6em;
+  line-height: 1.5;
+  position: absolute;
+  top: -2.25em;
+  display:none;
+}
+
+.form-submitted input:invalid ~ .validation-message,
+.form-submitted textarea:invalid ~ .validation-message,
+.form-submitted select:invalid ~ .validation-message {
+  display: block;
+}
+
+.radio-group {
+  margin-bottom: 1.5em;
+  position: relative;
+}
+.radio-group input {
+  opacity: 0;
+  width: 1px;
+  height: 5em;
+  position: absolute;
+  top: -5em;
+}
+.radio-group label {
+  font-size: 0.875em;
+  margin: 0 0.125em 0.4em 0;
+}
+.btn-radio,
+.btn-radio:visited,
+.btn-radio:link {
+  background-color: #888;
+  color: #fff;
+  text-align: left;
+}
+:checked + .btn-radio,
+.btn-radio.checked,
+.btn-radio:hover {
+  background-color: #FC4C02;
+  color: #fff;
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+
+#site-header {
+  color: #eee;
+  background-color: #666;
+}
+#site-title {
+  color: #eee;
+  font-family: "Arial", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-shadow: none;
+  float: left;
+  margin-right: 10em;
+  margin-right: -4.5em;
+  width: 100%;
+  padding-right: 4.5em;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#site-title a:link,
+#site-title a:visited {
+  display: inline;
+  font-size: 1.5em;
+  color: #fff;
+}
+#site-title a:hover {
+  color: #fff;
+}
+
+#site-title-text {
+  font-size: 0.75em;
+  display: inline-block;
+  position: relative;
+  top: -0.125em;
+  color: #9ad2e3;
+}
+#site-logo {
+  display: none;
+}
+#site-deadline {
+  display: block;
+  margin-top: -0.25em;
+}
+
+/* Navigation Button */
+#nav-btn {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; /* Careful changin' this! */
+  background: #666;
+  text-shadow: none;
+}
+
+/* User Menu */
+#sign-in-btn {
+  color: #fff;
+  font-weight: bold;
+  max-width: 4.25em;
+  line-height: 1.25;
+  margin-top: 1em;
+}
+.authed #sign-in-btn {
+  margin-top: 0.125em;
+}
+#sign-in-btn:hover {
+  color: #fff;
+}
+a.logout-btn {
+  color: #a3c7d9;
+}
+
+
+/* =Map
+-------------------------------------------------------------- */
+
+/* Add Place Button */
+#add-place-btn-container {
+/*  background: #777;*/
+/*  border-bottom: 1px solid #666;*/
+}
+
+/* Drag Marker Instructions (for adding a new place) */
+.drag-marker-instructions,
+.drag-marker-warning {
+/*  background-color: rgba(240,240,0,0.2);*/
+/*  color: #444;*/
+}
+.drag-marker-warning {
+/*  background-color: rgba(242, 206, 206, 0.8);*/
+}
+
+/* Ajax Error Message */
+#ajax-error-msg {
+/*  color: #8D5251;*/
+/*  border: 1px solid #CFABAB;*/
+/*  background-color: rgba(242, 206, 206, 0.8);*/
+}
+
+#map {
+  background-color: #EBE2D9;
+}
+
+
+/* =Progress Bars
+-------------------------------------------------------------- */
+
+.progress-bar {
+/*  background: rgba(85,85,85,0.5);*/
+}
+.progress-bar strong {
+/*  color: #fff;*/
+/*  text-shadow: 0 0 0.25em rgba(85,85,85,1);*/
+}
+.progress-bar span {
+/*  background: #00aaff;*/
+}
+
+
+/* =Content: Pages & Places
+-------------------------------------------------------------- */
+
+#content {
+/*  background: #fff;*/
+}
+
+/* Close Button */
+a.close-btn {
+  /*font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;*/ /* Careful changin' this! */
+/*  background: #fff;*/
+  color: #FC4C02;
+}
+a.close-btn:hover {
+/*  color: #cd2c67;*/
+}
+
+/* Promotion: Voting & Sharing */
+.user-support label {
+  /*background: transparent url(images/heart-empty.png) left center no-repeat scroll;*/
+/*  padding-left: 22px;*/
+  color: #fff;
+}
+.user-support input[type=checkbox]:checked ~ label {
+  /*background-image: url(images/heart.png);*/
+}
+.user-support:hover label {
+  background-color: #3979D4;
+  color: #fff;
+}
+
+/* Places */
+.response-date {
+/*  text-transform: uppercase;*/
+/*  color: #888;*/
+}
+.response-date a {
+/*  color: #888;*/
+}
+.response-date a:hover {
+/*  color: #00aaff;*/
+}
+
+/* Surveys */
+a.reply-link {
+   float: none;
+   position: relative;
+}
+.response-body {
+/*  border-top-color: #a8a8a8;*/
+/*  border-right-color: #c8c8c8;*/
+/*  border-left-color: #c8c8c8;*/
+/*  background: #eee;*/
+}
+.response-body:after {
+/*  border-top-color: #eee;*/
+}
+
+
+/* =The Ticker
+-------------------------------------------------------------- */
+
+#ticker {
+  background: #fff;
+}
+.recent-points a {
+  color: #444;
+  border-top: 0px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.recent-points a:hover {
+  color: #fff;
+  background: #4475BA;
+  border-color: #4475BA;
+}
+
+
+/* =List View
+-------------------------------------------------------------- */
+
+#list-container {
+/*  background: #fff;*/
+}
+
+/* Search & Sort */
+.list-sort-menu {
+/*  color: #eee;*/
+/*  text-transform: uppercase;*/
+}
+.list-sort-prompt {
+/*  color: #999;*/
+}
+.list-sort-menu a {
+}
+.list-sort-menu a.is-selected {
+/*  color: #555;*/
+}
+
+/* Place List */
+.place-list > li {
+/*  border-top: 1px solid #eeeeee;*/
+}
+
+
+/* =Geocoding
+-------------------------------------------------------------- */
+
+#geocode-address-bar {
+  background-color: #3B65A1;
+}
+input.geocode-address-field {
+  border-width: 0;
+  background-color: #325587;
+  color: #fff;
+}
+#geocode-address-bar .error {
+  line-height: 1.75;
+  background-color: #F26161;
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error + form {
+  box-shadow: 2px 2px 0 #F26161, 2px -2px 0 #F26161, -2px 2px 0 #F26161, -2px -2px 0 #F26161;
+}
+#geocode-address-bar .error.is-hidden + form {
+  box-shadow: none;
+}
+.geocode-spinner {
+  background-color: #325587;
+}
+
+/* =Footer
+-------------------------------------------------------------- */
+
+#colophon {
+  background-color: #666;
+  color: #ddd;
+}
+
+/* Powered By - Please do not change these. */
+a.shareabouts-logo {
+  font-family: 'Dancing Script', cursive;
+  color: #a3c7d9 !important;
+}
+a.shareabouts-logo:hover {
+  color: #fff !important;
+  border-bottom: 1px solid #ccc;
+}
+#powered-by a.openplans-logo {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #ffb885;
+}
+#powered-by a.openplans-logo:hover {
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+/* =Survey Form */
+
+.survey-field-why_good,
+.survey-field-why_bad,
+.survey-field-alt_suggestion {
+  display: none;
+}
+
+.total-response-indicator {
+  font-size: 1em;
+  color: #000;
+  margin: 0;
+}
+.total-response-count {
+  font-size: 1.75em;
+  font-weight: bold;
+  display: block;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+
+@media only screen and (min-height: 440px) and (max-width: 60em) {
+}
+
+/* iphone 5 */
+@media only screen and (min-height: 500px) and (max-width: 60em) {
+    #map {
+      height: 365px;
+    }
+}
+
+/* iphone 6 */
+@media only screen and (min-height: 570px) and (max-width: 60em) {
+    #map {
+      height: 440px;
+    }
+}
+
+/* iphone 6+ */
+@media only screen and (min-height: 650px) and (max-width: 60em) {
+    #map {
+      height: 560px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 60em) {
+}
+
+@media only screen and (min-width: 60em) {
+  #site-header {
+    padding-left: 10px;
+  }
+  #site-title {
+    width: auto;
+    position: relative
+  }
+  #site-title-text {
+    display: none;
+  }
+  #site-logo {
+    display: block;
+    max-height: 2.625em;
+    margin-top: -0.125em;
+  }
+  #site-deadline {
+    position: absolute;
+    top: 0.125em;
+    left: 100%;
+    white-space: nowrap;
+    margin-left: -3.625em;
+  }
+  .access {
+    font-size: 0.75em;
+    margin-top: -0.5em;
+  }
+  .access li:hover > ul,
+  .access li:hover > form > ul {
+    background: #ccc;
+    border-color: rgba(0,0,0,0.05);
+  }
+  #sign-in-btn {
+    font-size: 0.75em;
+  }
+  .authed #sign-in-btn {
+    margin-top: 0.5em;
+  }
+  .sign-in-menu {
+    background: #666;
+  }
+  .sign-in-menu:before {
+    border-bottom-color: #666;
+  }
+
+  #add-place-btn-container {
+    background: transparent;
+    border-bottom: 0;
+  }
+
+  .list-toggle-nav {
+    float: left;
+  }
+  .list-toggle-btn,
+  .list-toggle-btn:visited,
+  .list-toggle-btn:link {
+    min-width: 11.5em;
+    background-color: #fff;
+    color: #3979D4;
+  }
+  .list-toggle-btn:hover {
+    background-color: #fff;
+    color: #444;
+  }
+  .show-the-map:before {
+    content: '\27A4';
+    margin: 0 0.375em;
+    display: inline-block;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 30% 60%;
+        -ms-transform-origin: 30% 60%;
+            transform-origin: 30% 60%;
+  }
+  .show-the-list:before {
+    content: '\2630';
+    margin: 0 0.375em;
+    text-shadow: -0.25em 0 0 #fff, -0.25em -1px 0 #fff, -0.25em 1px 0 #fff, -0.375em 0 0 #3979D4;
+  }
+  .list-toggle-btn:hover .show-the-list:before {
+    text-shadow: -0.25em 0 0 #fff, -0.25em -1px 0 #fff, -0.25em 1px 0 #fff, -0.375em 0 0 #444;
+  }
+  .total-response-indicator {
+    font-size: 0.875em;
+    position: fixed;
+    bottom: -1em;
+    left: -1em;
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+    padding: 0.5em 1em 1.5em 2em;
+    border-radius: 0 0.75em 0 0;
+    box-shadow: 0.325em -0.325em rgba(0,0,0,0.1);
+  }
+  .total-response-count {
+    color: #FC4C02;
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  .access {
+    font-size: 0.875em;
+  }
+  #sign-in-btn {
+    max-width: none;
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+}
