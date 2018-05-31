@@ -23,7 +23,4 @@ There are a number of files to create and edit.
 
 ## Local development
 
-Shareabouts uses vagrant to simplify local development. To start a dev server,
-run `vagrant up` from the root of the app.
-
-Visit `SYSTEM_NAME.localhost:4000` to view the app.
+### Hold your horses we will get there
