@@ -6,7 +6,7 @@ app:
   name: Where do you want bike share?
   # Meta description that will show up in Google search results
   meta_description: _(Bike share is expanding, where do you want to see new bikes?)  # Meta author that will show up in Google search results
-  meta_author: Bay Area Bike Share
+  meta_author: Ford GoBike
 
 
   # When the map loads, existing places will be loaded in chunks. By default,
