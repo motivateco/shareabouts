@@ -49,3 +49,6 @@ env/
 !.elasticbeanstalk/*.global.yml
 
 local_settings_*.py
+
+# PyCharm IDE
+.idea/

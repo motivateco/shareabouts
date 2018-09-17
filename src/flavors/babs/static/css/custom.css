@@ -1,10 +1,9 @@
 /* =Color Palette
 -------------------------------------------------------------- */ /*
 
-  #33CBFF   lighter blue
-  #0095D7   light blue
-  #005dab   dark blue
-  #004f91   darker blue
+  FGB Light Blue #419BD9
+  FGB Dark Blue #0F3573
+
   */
 
 
@@ -13,10 +12,10 @@
 
 /* Links */
 a, a:active, a:visited {
-  color: #0095D7;
+  color: #0F3573;
 }
 a:hover {
-  color: #33CBFF;
+  color: #419BD9;
 }
 
 /* Typography */
@@ -34,30 +33,30 @@ body, select, input, textarea {
 /*  border-radius: 3px;*/
 /*  font-family: Arial, sans-serif;*/
 /*  font-weight: 400;*/
-  background-color: #0095D7;
+  background-color: #419BD9;
   color: #fff;
 /*  border: 0;*/
   border-color: transparent;
 }
 .btn:hover, .button:hover, button:hover {
-  background-color: #33CBFF;
+  background-color: #419BD9;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #004f91;
+  background-color: #0F3573;
   color: #fff;
 /*  font-weight: 700;*/
 }
 .btn-primary:hover {
-  background-color: #005dab;
+  background-color: #0F3573;
 }
 .btn-secondary,
 .btn-secondary:visited,
 .btn-secondary:link {
-  background-color: #0095D7;
+  background-color: #419BD9;
   color: #fff;
 }
 .btn-secondary:hover {
-  background-color: #33CBFF;
+  background-color: #419BD9;
   color: #fff;
 }
 
@@ -82,8 +81,8 @@ textarea {
 }
 input:focus,
 textarea:focus {
-  border-color: #33CBFF;
-  outline: 2px solid #33CBFF;
+  border-color: #419BD9;
+  outline: 2px solid #419BD9;
 }
 
 .form-submitted input:invalid,
@@ -110,7 +109,7 @@ a.reply-link.btn.btn-small {
 
 #site-header {
   color: inherit;
-  background-color: #005dab;
+  background-color: #0F3573;
   min-height: 3em;
 }
 #site-title {
@@ -135,7 +134,7 @@ a.reply-link.btn.btn-small {
 .site-logo {
   display: inline-block;
   max-height: 1.75em;
-  width: auto;
+  width: 90%;
   margin-right: 1.5em;
 }
 
@@ -166,8 +165,8 @@ a.reply-link.btn.btn-small {
 /* Navigation Button */
 #nav-btn {
   font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
-  background: #004f91;
-  color: #0095D7;
+  background: #0F3573;
+  color: #419BD9;
   text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
 }
 
@@ -177,7 +176,7 @@ a.reply-link.btn.btn-small {
   font-weight: 700;
 }
 #sign-in-btn:hover {
-  color: #33CBFF;
+  color: #419BD9;
 }
 a.logout-btn {}
 
@@ -186,7 +185,7 @@ a.logout-btn {}
 -------------------------------------------------------------- */
 
 #geocode-address-bar {
-  background-color: #004f91;
+  background-color: #0F3573;
 }
 input.geocode-address-field {
   background-color: #004178;
@@ -198,8 +197,8 @@ input.geocode-address-field {
 
 /* Add Place Button */
 #add-place-btn-container {
-  background: #0095D7;
-  border-bottom: 1px solid #0095D7;
+  background: #419BD9;
+  border-bottom: 1px solid #419BD9;
 }
 
 /* Drag Marker Instructions (for adding a new place) */
@@ -270,7 +269,7 @@ a.close-btn:hover {
 .user-support input[type=checkbox]:checked ~ label {
 }
 .user-support:hover label {
-  background-color: #33CBFF;
+  background-color: #419BD9;
   color: #fff;
 }
 .sharing {
@@ -335,7 +334,7 @@ a.close-btn:hover {
   color: #555;
 }
 .response-date a:hover {
-  color: #33CBFF;
+  color: #419BD9;
 }
 
 /* Checkboxes for survey */
@@ -391,7 +390,7 @@ a.close-btn:hover {
 -------------------------------------------------------------- */
 
 #ticker {
-  background-color: #33CBFF;
+  background-color: gray;
 }
 .legend {
   padding: 0.75em 0.75em 0.5em;
@@ -418,12 +417,12 @@ a.close-btn:hover {
 }
 .recent-points a {
   color: #fff;
-  border-top: 1px solid #80DFFF;
-  border-bottom: 1px solid #00ABE6;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 .recent-points a:hover {
   color: #fff;
-  background: #0095D7;
+  background: darkgray;
   border-color: rgba(0,0,0,0.1);
 }
 
@@ -455,7 +454,7 @@ a.close-btn:hover {
 -------------------------------------------------------------- */
 
 #colophon {
-  background-color: #005dab;
+  background-color: #0F3573;
   color: #ddd;
 }
 
@@ -515,11 +514,11 @@ a.shareabouts-logo:hover {
   .list-toggle-btn:visited,
   .list-toggle-btn:link {
     min-width: 11.5em;
-    background-color: #0095D7;
+    background-color: #419BD9;
     color: #fff;
   }
   .list-toggle-btn:hover {
-    background-color: #33CBFF;
+    background-color: #419BD9;
     color: #fff;
   }
   .show-the-map:before {
@@ -537,13 +536,13 @@ a.shareabouts-logo:hover {
   .show-the-list:before {
     content: '\2630';
     margin: 0 0.375em;
-    text-shadow: -0.25em 0 0 #0095D7, -0.25em -1px 0 #0095D7, -0.25em 1px 0 #0095D7, -0.375em 0 0 #fff;
+    text-shadow: -0.25em 0 0 #419BD9, -0.25em -1px 0 #419BD9, -0.25em 1px 0 #419BD9, -0.375em 0 0 #fff;
   }
   .list-toggle-btn:hover .show-the-list:before {
-    text-shadow: -0.25em 0 0 #33CBFF, -0.25em -1px 0 #33CBFF, -0.25em 1px 0 #33CBFF, -0.375em 0 0 #fff;
+    text-shadow: -0.25em 0 0 #419BD9, -0.25em -1px 0 #419BD9, -0.25em 1px 0 #419BD9, -0.375em 0 0 #fff;
   }
   #geocode-address-bar {
-    border-right: 1px solid #004f91;
+    border-right: 1px solid #0F3573;
   }
 
   /* narrower content area */

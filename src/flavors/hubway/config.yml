@@ -7,7 +7,7 @@ app:
   # Meta description that will show up in Google search results
   meta_description: _(Bike share is expanding, where do you want to see new bikes?)
   # Meta author that will show up in Google search results
-  meta_author: Blue Bikes Bike Share
+  meta_author: Bluebikes Bike Share
 
 
   # When the map loads, existing places will be loaded in chunks. By default,

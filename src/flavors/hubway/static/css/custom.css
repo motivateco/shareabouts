@@ -3,9 +3,9 @@
 
 /*
 Hubway Official Colors from marketing site
-Green: #47AA42
+Dark Blue: #1D428A
 Gray: #6A747C
-Light Green: #6BC533
+Light Blue #2CA3E1
 New Balance Red: #E51937
 Map Red: #C6171A
 */
@@ -19,7 +19,7 @@ Map Red: #C6171A
 
 /* Links */
 a, a:active, a:visited {
-  color: #6BC533;
+  color: #2CA3E1;
 }
 a:hover {
   color: #505050;
@@ -40,7 +40,7 @@ body, select, input, textarea {
 /*  border-radius: 3px;*/
 /*  font-family: Arial, sans-serif;*/
 /*  font-weight: 400;*/
-  background-color: #6BC533;
+  background-color: #2CA3E1;
   color: #fff;
   border: 0;
   border-radius: 0.25rem;
@@ -51,7 +51,7 @@ body, select, input, textarea {
   color: #fff;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #6BC533;
+  background-color: #2CA3E1;
   color: #fff;
 /*  font-weight: 700;*/
 }
@@ -64,7 +64,7 @@ body, select, input, textarea {
 .btn-secondary,
 .btn-secondary:visited,
 .btn-secondary:link {
-  background-color: #6BC533;
+  background-color: #2CA3E1;
   color: #fff;
 }
 .btn-secondary:hover {
@@ -93,8 +93,8 @@ textarea {
 }
 input:focus,
 textarea:focus {
-  border-color: #47AA42;
-  outline: 2px solid #47AA42;
+  border-color: #1D428A;
+  outline: 2px solid #1D428A;
 }
 
 .form-submitted input:invalid,
@@ -108,7 +108,7 @@ textarea:focus {
 
 #site-header {
   color: inherit;
-  background-color: #47AA42;
+  background-color: #1D428A;
   min-height: 3em;
 }
 #site-title {
@@ -158,7 +158,7 @@ textarea:focus {
 /* Navigation Button */
 #nav-btn {
   font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
-  background: #6BC533;
+  background: #2CA3E1;
   color: #fff;
 }
 
@@ -214,7 +214,7 @@ a.logout-btn {}
 /*  text-shadow: 0 0 0.25em rgba(85,85,85,1);*/
 }
 .progress-bar span {
-	background-color: #6BC533;
+	background-color: #2CA3E1;
 }
 
 /* =Content: Pages & Places
@@ -303,7 +303,7 @@ a.logout-btn {}
   color: #555;
 }
 .response-date a:hover {
-  color: #6BC533;
+  color: #2CA3E1;
 }
 
 /* Checkboxes for survey */

@@ -33,11 +33,16 @@ Vagrant.configure("2") do |config|
     mkdir -p
     cd /opt/python/current/app/
     sudo pip install -r requirements.txt
+    # having trouble installing all packages at once
+    sudo pip install raven==5.19.0
+    sudo pip install python-dateutil==2.2
+    sudo pip install ujson==1.33
     virtualenv env
     source env/bin/activate
     env/bin/pip install -r requirements.txt
     sudo rm -rf /etc/apache2/sites-enabled/000-default.conf
     sudo ln -s /opt/python/current/app/wsgi.conf /etc/apache2/sites-enabled/wsgi.conf
+    sudo adduser --disabled-password --group --system wsgi
     sudo service apache2 restart
   SHELL
 end
