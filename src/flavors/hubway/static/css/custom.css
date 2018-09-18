@@ -179,6 +179,9 @@ a.logout-btn {}
 /* =Geocoding
 -------------------------------------------------------------- */
 
+input.geocode-address-field::placeholder {
+  color: #ddd;
+}
 .geocode-address-label:before { border-color: #ddd; }
 .geocode-address-label:after { background-color: #ddd; }
 
