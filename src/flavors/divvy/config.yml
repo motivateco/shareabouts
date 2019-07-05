@@ -146,6 +146,7 @@ place:
           value: 30
 
 survey:
+  adding_supported: true
   submission_type: comments
 
   # Response config
@@ -173,6 +174,7 @@ survey:
       name: submitter_name
 
 support:
+  adding_supported: true
   submission_type: support
   submit_btn_text: _(Support)
   action_text: supported
