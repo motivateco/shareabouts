@@ -1,5 +1,6 @@
 # Django settings for project project.
 import datetime
+import os
 import os.path
 
 SHAREABOUTS_DATASET_KEY = "ZjMzOWE5MmQwNmI1ZThmYzlmNzk0OTI1"
@@ -17,6 +18,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+USE_GEODB = (os.environ.get('USE_GEODB', 'True').lower() == 'true')
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.dummy',
@@ -171,6 +173,7 @@ INSTALLED_APPS = (
 
     # Project apps
     'sa_web',
+    'sa_login',
     'proxy',
 )
 
@@ -229,7 +232,9 @@ if 'DATABASE_URL' in env:
     import dj_database_url
     # NOTE: Be sure that your DATABASE_URL has the 'postgis://' scheme.
     DATABASES = {'default': dj_database_url.config()}
-    DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
+
+    if USE_GEODB:
+        DATABASES['default']['ENGINE'] = 'django.contrib.gis.db.backends.postgis'
 
 if 'REDIS_URL' in env or 'REDISCLOUD_URL' in env:
     redis_url = env.get('REDIS_URL') or env.get('REDISCLOUD_URL')
@@ -345,7 +350,8 @@ LOCAL_SETTINGS_FILE = os.path.join(os.path.dirname(__file__), 'local_settings_di
 if os.path.exists(LOCAL_SETTINGS_FILE):
     # By doing this instead of import, local_settings.py can refer to
     # local variables from settings.py without circular imports.
-    execfile(LOCAL_SETTINGS_FILE)
+    with open(LOCAL_SETTINGS_FILE) as settingsfile:
+        exec(settingsfile.read())
 
 
 ##############################################################################
