@@ -11,12 +11,42 @@ var Shareabouts = Shareabouts || {};
       'change [data-group-required]': 'onRequiredOptionButtonChange'
     },
     initialize: function(){
+      var textareaEvent = 'oninput' in document ? 'input' : 'keyup blur';
+
       S.TemplateHelpers.overridePlaceTypeConfig(this.options.placeConfig.items,
         this.options.defaultPlaceTypeName);
       S.TemplateHelpers.insertInputTypeFlags(this.options.placeConfig.items);
 
       // Bind model events
       this.model.on('error', this.onError, this);
+
+      // Listen to input changes on textareas. If they have a maxlength, then
+      // update the character count. If maxlength is not supported, then
+      // polyfill.
+      this.$el.on(textareaEvent, 'textarea', function(evt) {
+        var $counter = $(this).siblings('.remaining-characters').children('.character-counter'),
+            maxLen, curLen, remaining;
+
+        if (this.hasAttribute('maxlength')) {
+          maxLen = this.getAttribute('maxlength');
+          curLen = this.value.length;
+          remaining = maxLen - curLen;
+
+          if (remaining <= 20) {
+            $counter.parent('.remaining-characters').addClass('warning');
+
+            if (remaining <= 0) {
+              remaining = 0;
+              this.value = this.value.substr(0, maxLen);
+            }
+          } else {
+            $counter.parent('.remaining-characters').removeClass('warning');
+          }
+
+          $counter.text(remaining);
+          return false;
+        }
+      });
     },
     render: function(){
       // Augment the model data with place types for the drop down
@@ -28,6 +58,16 @@ var Shareabouts = Shareabouts || {};
 
       this.$el.html(Handlebars.templates['place-form'](data));
       this.updatedRequiredOptionButtons();
+
+      // Init counter text
+      this.$('textarea').each(function() {
+        var $counter = $(this).siblings('.remaining-characters').children('.character-counter');
+
+        if (this.hasAttribute('maxlength')) {
+          $counter.text(this.getAttribute('maxlength'));
+        }
+      });
+
       return this;
     },
     remove: function() {
@@ -43,7 +83,13 @@ var Shareabouts = Shareabouts || {};
       this.$('.drag-marker-instructions, .drag-marker-warning').addClass('is-visuallyhidden');
     },
     setLocation: function(location) {
-      this.location = location;
+      // We want to make sure we don't give the user the impression that their
+      // location is set when it isn't yet, so only update location-receivers
+      // if the center has been set.
+      if (this.center) {
+        this.location = location;
+        this.$('.location-receiver').html(location)
+      }
     },
     // Get the attributes from the form
     getAttrs: function() {
@@ -156,7 +202,7 @@ var Shareabouts = Shareabouts || {};
       this.model.save(attrs, {
         success: function() {
           S.Util.log('USER', 'new-place', 'successfully-add-place');
-          router.navigate('/place/' + model.id, {trigger: true});
+          router.navigate('/place/' + model.id + '/new', {trigger: true});
         },
         error: function() {
           S.Util.log('USER', 'new-place', 'fail-to-add-place');
