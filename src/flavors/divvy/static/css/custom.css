@@ -151,6 +151,10 @@ a#nav-btn:visited {
 }
 
 /* Progress Bar */
+#map-progress {
+  top: 50px;
+}
+
 .progress-bar span {
   background: #1da0d1;
 }
