@@ -1,8 +1,9 @@
 /* =Color Palette
 -------------------------------------------------------------- */ /*
 
-  FGB Light Blue #419BD9
-  FGB Dark Blue #0F3573
+  Black is #000000
+  Almost white is #DCDCDC
+  Button pink is #FF00BF
 
   */
 
@@ -40,41 +41,49 @@ body, select, input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
   letter-spacing: 0.067em;
+  color: black;
 }
 
 /* Buttons */
 .btn,
 .btn:visited,
 .btn:link {
-/*  text-transform: uppercase;*/
+  padding: 0.5rem 1rem;
+  text-transform: none;
+  font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.125em;
 /*  font-weight: 600;*/
-/*  border-radius: 3px;*/
-/*  font-family: Arial, sans-serif;*/
+  border-radius: 4px;
 /*  font-weight: 400;*/
-  background-color: #419BD9;
+  background-color: #FF00BF;
   color: #fff;
 /*  border: 0;*/
   border-color: transparent;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s;
 }
 .btn:hover, .button:hover, button:hover {
-  background-color: #419BD9;
+  background-color: #000;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #0F3573;
+  background-color: black;
   color: #fff;
 /*  font-weight: 700;*/
 }
 .btn-primary:hover {
-  background-color: #0F3573;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  border-style: solid;
 }
 .btn-secondary,
 .btn-secondary:visited,
 .btn-secondary:link {
-  background-color: #419BD9;
+  background-color: #FF00BF;
   color: #fff;
 }
 .btn-secondary:hover {
-  background-color: #419BD9;
+  background-color: #000;
   color: #fff;
 }
 
@@ -185,6 +194,12 @@ a.reply-link.btn.btn-small {
   text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
 }
 
+@media only screen and (min-width: 60em) {
+  #pages-nav-container, #language-picker {
+    height: 3.5rem;
+  }
+}
+
 /* User Menu */
 #sign-in-btn {
   color: #BFEFFF;
@@ -214,6 +229,18 @@ input.geocode-address-field {
 #add-place-btn-container {
   background: #419BD9;
   border-bottom: 1px solid #419BD9;
+}
+
+#add-place {
+  font-size: 1.4rem;
+  letter-spacing: 0.067em;
+}
+
+@media only screen and (min-width: 60em) {
+  #add-place-btn-container .btn:link,
+  #add-place-btn-container .btn:visited {
+    padding: 0.84rem 4.2rem;
+  }
 }
 
 /* Drag Marker Instructions (for adding a new place) */
