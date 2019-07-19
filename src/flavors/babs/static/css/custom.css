@@ -315,7 +315,7 @@ body, select, input, textarea {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-  letter-spacing: 0.067em;
+  letter-spacing: 0.045em;
   color: black;
 }
 
@@ -326,8 +326,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5rem 1rem;
   text-transform: none;
   font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.125em;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
 /*  font-weight: 600;*/
   border-radius: 4px;
 /*  font-weight: 400;*/
@@ -359,7 +360,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn-secondary:hover {
   background-color: #000;
-  color: #fff;
 }
 
 /* Forms */
@@ -435,7 +435,7 @@ a.reply-link.btn.btn-small {
 
 #site-title a.site-subtitle {
   font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
-  letter-spacing: 0.067em;
+  letter-spacing: 0.045em;
   color: black;
   text-shadow: none;
 }
@@ -508,7 +508,7 @@ input.geocode-address-field {
 
 #add-place {
   font-size: 1.4rem;
-  letter-spacing: 0.067em;
+  letter-spacing: 0.045em;
 }
 
 @media only screen and (min-width: 60em) {
