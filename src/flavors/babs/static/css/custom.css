@@ -37,6 +37,11 @@ body, select, input, textarea {
   font-family: Arial, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  letter-spacing: 0.067em;
+}
+
 /* Buttons */
 .btn,
 .btn:visited,
@@ -146,9 +151,9 @@ a.reply-link.btn.btn-small {
 
 #site-title a.site-subtitle {
   font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  letter-spacing: 0.067em;
   color: black;
   text-shadow: none;
-  letter-spacing: 1.5px;
 }
 
 #babs-logo {
@@ -168,7 +173,7 @@ a.reply-link.btn.btn-small {
   }
   #site-title a.site-subtitle {
     vertical-align: 63%;
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 }
 
