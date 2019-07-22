@@ -172,10 +172,10 @@ INSTALLED_APPS = (
     'django_extensions',
 
     # Project apps
+    'lyftstyles',
     'sa_web',
     'sa_login',
     'proxy',
-    'lyftstyles',
 )
 
 # Use a test runner that does not use a database.

@@ -579,11 +579,16 @@ a.close-btn:hover {
 .user-support label {
   color: #fff;
   padding-left: 30px;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s;
 }
 .user-support input[type=checkbox]:checked ~ label {
+  background-image: url(images/heart-white.png);
+}
+.user-support:hover input[type=checkbox]:checked ~ label {
+  background-image: url(images/heart.png);
 }
 .user-support:hover label {
-  background-color: #419BD9;
+  background-color: black;
   color: #fff;
 }
 .sharing {
@@ -704,7 +709,7 @@ a.close-btn:hover {
 -------------------------------------------------------------- */
 
 #ticker {
-  background-color: gray;
+  background-color: black;
 }
 .legend {
   padding: 0.75em 0.75em 0.5em;
@@ -731,13 +736,16 @@ a.close-btn:hover {
 }
 .recent-points a {
   color: #fff;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .recent-points a:hover {
   color: #fff;
-  background: darkgray;
+  background: black;
   border-color: rgba(0,0,0,0.1);
+}
+.recent-points .avatar {
+  border-radius: 4px;
 }
 
 
