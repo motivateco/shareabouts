@@ -414,20 +414,36 @@ a.reply-link.btn.btn-small {
 #site-title {
   font-weight: 700;
   text-shadow: 1px -1px 1px rgba(0,0,0,0.5);
-  max-width: 58%;
   margin: 0;
 }
 #site-title a:link,
 #site-title a:visited {
-  font-size: 1em;
-  line-height: 1.2;
-  display: inline-block;
+  font-size: 0.7rem;
+  line-height: 1;
+  display: block;
   /* max-width: 8.5em; */
 }
+@media only screen and (min-width: 60em) {
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1em;
+    line-height: 1.2;
+    display: inline-block;
+    /* max-width: 8.5em; */
+  }
+}
+
 .site-logo {
   display: inline-block;
-  margin: 0.8rem 3rem 0 0.6rem;
-  height: 2.85rem;
+  margin: 0.1rem 3rem 0 0;
+  height: 1.5rem;
+}
+@media only screen and (min-width: 60em) {
+  .site-logo {
+    margin-top: 0.8rem;
+    margin-right: 0.6rem;
+    height: 2.85rem;
+  }
 }
 
 #site-title a.site-subtitle {
@@ -461,8 +477,8 @@ a.reply-link.btn.btn-small {
 /* Navigation Button */
 #nav-btn {
   font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
-  background: #0F3573;
-  color: #419BD9;
+  background: black;
+  color: white;
   text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
 }
 
