@@ -150,6 +150,7 @@ place:
 
 
 survey:
+  adding_supported: true
   submission_type: comments
 
   # Response config
@@ -178,6 +179,7 @@ survey:
       sticky: true
 
 support:
+  adding_supported: true
   submission_type: support
   submit_btn_text: _(Support)
   response_name: _(support)
