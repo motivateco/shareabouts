@@ -3,8 +3,10 @@
 
   Black is #000000
   Almost white is #DCDCDC
-  Button pink is #FF00BF
+  Lyft pink is #FF00BF
 
+  Notice background: #f5f5f5
+  Notice/widget border: 1px solid #c5c5c5
   */
 
 
@@ -299,6 +301,48 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-regularitalic.1b90d21c.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-regularitalic.7d6a9503.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-regular.116fa118.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-regular.ffe614f0.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-mediumitalic.ddae57f9.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-mediumitalic.a213ecf5.woff) format("woff");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-medium.4037cad5.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-medium.f7683815.woff) format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-bolditalic.7f94ad46.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-bolditalic.ba9caf42.woff) format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-bold.17bedb5e.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-bold.c629b6a9.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
+
 /* Links */
 a, a:active, a:visited {
   color: #0F3573;
@@ -310,7 +354,7 @@ a:hover {
 /* Typography */
 body, select, input, textarea {
   color: #555;
-  font-family: Arial, sans-serif;
+  font-family: "Proxima Nova", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -376,7 +420,8 @@ input[type=time],
 input[type=url],
 input[type=week],
 textarea {
-  border-color: #ddd;
+  border: 1px solid #c5c5c5;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
 }
 input:focus,
 textarea:focus {
@@ -534,11 +579,14 @@ input.geocode-address-field {
 /* Drag Marker Instructions (for adding a new place) */
 .drag-marker-instructions,
 .drag-marker-warning {
-/*  background-color: rgba(240,240,0,0.2);*/
-/*  color: #444;*/
+  background-color: #f5f5f5;
+  color: black;
+  border: 1px solid #c5c5c5;
+  font-weight: normal;
 }
 .drag-marker-warning {
-/*  background-color: rgba(242, 206, 206, 0.8);*/
+  color: #ff00bf;
+  font-weight: bold;
 }
 
 /* Ajax Error Message */
@@ -575,7 +623,7 @@ input.geocode-address-field {
 a.close-btn {
   font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
   background: #fff;
-  color: #ff5e99;
+  color: black;
 }
 a.close-btn:hover {
   color: #cd2c67;
