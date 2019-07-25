@@ -455,6 +455,7 @@ a.reply-link.btn.btn-small {
   color: inherit;
   background-color: white;
   min-height: 3em;
+  border-bottom: 1px solid #EFEFF1;
 }
 #site-title {
   font-weight: 700;
@@ -558,10 +559,14 @@ input.geocode-address-field {
 /* =Map
 -------------------------------------------------------------- */
 
+#map {
+  background: #C3EAE3;
+}
+
 /* Add Place Button */
 #add-place-btn-container {
-  background: #419BD9;
-  border-bottom: 1px solid #419BD9;
+  background: #EFEFF1;
+  border-bottom: 1px solid #EFEFF1;
 }
 
 #add-place {
@@ -773,7 +778,8 @@ a.close-btn:hover {
 -------------------------------------------------------------- */
 
 #ticker {
-  background-color: black;
+  background-color: #EFEFF1;
+  z-index: 100;
 }
 .legend {
   padding: 0.75em 0.75em 0.5em;
@@ -799,14 +805,18 @@ a.close-btn:hover {
   margin-right: 0.5em;
 }
 .recent-points a {
-  color: #fff;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  color: black;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  transition: color 0.2s,
+              background-color 0.2s;
 }
 .recent-points a:hover {
-  color: #fff;
-  background: black;
-  border-color: rgba(0,0,0,0.1);
+  color: #FF00BF;
+  background: #F9F9FA;
+  border-color: transparent;
+  border-left-color: #EFEFF1;
 }
 .recent-points .avatar {
   border-radius: 4px;
@@ -932,7 +942,7 @@ a.shareabouts-logo:hover {
   }
 
   /* narrower content area */
-  .activity-enabled #content { left: 47%; }
+  .activity-enabled #content { left: 47%; z-index: 101; }
   .activity-enabled.content-visible #map-container { width: 47%; }
 
 }
