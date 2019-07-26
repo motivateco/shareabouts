@@ -54,7 +54,7 @@ place_types:
           iconAnchor: [12, 12]
       - condition: '{{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/pin-bike-black.png
+          iconUrl: /static/css/images/markers/pin-bike-gray.png
           iconSize: [48, 56]
           iconAnchor: [24, 56]
 
