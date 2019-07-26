@@ -33,6 +33,7 @@ map:
     zoom: 10
     minZoom: 9
     maxZoom: 17
+    preferCanvas: true
   layers:
     - style: https://layer.bicyclesharing.net/map/v2/fgb/style
       accessToken: pk.eyJ1IjoibW90aXZhdGVjbyIsImEiOiIyMmZiZjgxZDk3ZjFmYmVkM2RlMjJjOThlNmI4MWQzYSJ9.w4Pt2wTiMPIloStx2czBzw
@@ -47,6 +48,32 @@ place_types:
   suggestion:
     label: _(station)
     rules:
+      - condition: '{{layer.focused}} === false && {{map.zoom}} <= 10'
+        style:
+          radius: 2
+          opacity: 1
+          color: '#888'
+          weight: 0
+          fillColor: '#999999'
+          fillOpacity: 0.8
+      - condition: '{{layer.focused}} === false && {{map.zoom}} == 11'
+        style:
+          radius: 3
+          opacity: 1
+          color: '#888'
+          weight: 0
+          fillColor: '#999999'
+          fillOpacity: 0.8
+      - condition: '{{layer.focused}} === false && {{map.zoom}} == 12'
+        icon:
+          iconUrl: /static/css/images/markers/circle-bike-gray.png
+          iconSize: [16, 16]
+          iconAnchor: [8, 8]
+      - condition: '{{layer.focused}} === false && {{map.zoom}} == 13'
+        icon:
+          iconUrl: /static/css/images/markers/circle-bike-gray.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
       - condition: '{{layer.focused}} === false'
         icon:
           iconUrl: /static/css/images/markers/circle-bike-gray.png
@@ -61,14 +88,40 @@ place_types:
   station:
     label: _(station)
     rules:
+      - condition: '{{layer.focused}} === false && {{map.zoom}} <= 10'
+        style:
+          radius: 2
+          opacity: 1
+          color: '#888'
+          weight: 0
+          fillColor: '#523BE4'
+          fillOpacity: 0.8
+      - condition: '{{layer.focused}} === false && {{map.zoom}} == 11'
+        style:
+          radius: 3
+          opacity: 1
+          color: '#888'
+          weight: 0
+          fillColor: '#523BE4'
+          fillOpacity: 0.8
+      - condition: '{{layer.focused}} === false && {{map.zoom}} == 12'
+        icon:
+          iconUrl: /static/css/images/markers/circle-bike-purple.png
+          iconSize: [16, 16]
+          iconAnchor: [8, 8]
+      - condition: '{{layer.focused}} === false && {{map.zoom}} == 13'
+        icon:
+          iconUrl: /static/css/images/markers/circle-bike-purple.png
+          iconSize: [20, 20]
+          iconAnchor: [10, 10]
       - condition: '{{layer.focused}} === false'
         icon:
-          iconUrl: /static/css/images/markers/circle-bike-green.png
+          iconUrl: /static/css/images/markers/circle-bike-purple.png
           iconSize: [24, 24]
           iconAnchor: [12, 12]
       - condition: '{{layer.focused}} === true'
         icon:
-          iconUrl: /static/css/images/markers/pin-bike-green.png
+          iconUrl: /static/css/images/markers/pin-bike-purple.png
           iconSize: [48, 56]
           iconAnchor: [24, 56]
 
