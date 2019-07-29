@@ -1,14 +1,350 @@
 /* =Color Palette
 -------------------------------------------------------------- */ /*
 
-  FGB Light Blue #419BD9
-  FGB Dark Blue #0F3573
+  Black is #000000
+  Almost white is #DCDCDC
+  Lyft pink is #FF00BF
 
+  Well background: #F9F9FA
+  Well border: #EFEFF1
+
+  Notice background: #f5f5f5
+  Notice/widget border: 1px solid #c5c5c5
   */
 
 
 /* =Base Styles
 -------------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Mediumitalic.eot');
+    src: url('fonts/subset-LyftPro-Mediumitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Mediumitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Mediumitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Mediumitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Mediumitalic.svg#LyftPro-Mediumitalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Regularitalic.eot');
+    src: url('fonts/subset-LyftPro-Regularitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Regularitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Regularitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Regularitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Regularitalic.svg#LyftPro-Regularitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-SemiBold.eot');
+    src: url('fonts/subset-LyftPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-SemiBold.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-SemiBold.woff') format('woff'),
+        url('fonts/subset-LyftPro-SemiBold.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-SemiBold.svg#LyftPro-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Lightitalic.eot');
+    src: url('fonts/subset-LyftPro-Lightitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Lightitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Lightitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Lightitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Lightitalic.svg#LyftPro-Lightitalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-SemiBolditalic.eot');
+    src: url('fonts/subset-LyftPro-SemiBolditalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-SemiBolditalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-SemiBolditalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-SemiBolditalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-SemiBolditalic.svg#LyftPro-SemiBolditalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Light.eot');
+    src: url('fonts/subset-LyftPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Light.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Light.woff') format('woff'),
+        url('fonts/subset-LyftPro-Light.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Light.svg#LyftPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Bolditalic.eot');
+    src: url('fonts/subset-LyftPro-Bolditalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Bolditalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Bolditalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Bolditalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Bolditalic.svg#LyftPro-Bolditalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Regularitalic.eot');
+    src: url('fonts/subset-LyftPro-Regularitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Regularitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Regularitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Regularitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Regularitalic.svg#LyftPro-Regularitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Bolditalic.eot');
+    src: url('fonts/subset-LyftPro-Bolditalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Bolditalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Bolditalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Bolditalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Bolditalic.svg#LyftPro-Bolditalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-ExtraLightitalic.eot');
+    src: url('fonts/subset-LyftPro-ExtraLightitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-ExtraLightitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-ExtraLightitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-ExtraLightitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-ExtraLightitalic.svg#LyftPro-ExtraLightitalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Bold.eot');
+    src: url('fonts/subset-LyftPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Bold.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Bold.woff') format('woff'),
+        url('fonts/subset-LyftPro-Bold.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Bold.svg#LyftPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Lightitalic.eot');
+    src: url('fonts/subset-LyftPro-Lightitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Lightitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Lightitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Lightitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Lightitalic.svg#LyftPro-Lightitalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Regular.eot');
+    src: url('fonts/subset-LyftPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Regular.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Regular.woff') format('woff'),
+        url('fonts/subset-LyftPro-Regular.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Regular.svg#LyftPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Blackitalic.eot');
+    src: url('fonts/subset-LyftPro-Blackitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Blackitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Blackitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-Blackitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Blackitalic.svg#LyftPro-Blackitalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Regular.eot');
+    src: url('fonts/subset-LyftPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Regular.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Regular.woff') format('woff'),
+        url('fonts/subset-LyftPro-Regular.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Regular.svg#LyftPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Bold.eot');
+    src: url('fonts/subset-LyftPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Bold.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Bold.woff') format('woff'),
+        url('fonts/subset-LyftPro-Bold.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Bold.svg#LyftPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Medium.eot');
+    src: url('fonts/subset-LyftPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Medium.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Medium.woff') format('woff'),
+        url('fonts/subset-LyftPro-Medium.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Medium.svg#LyftPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-UltraLightitalic.eot');
+    src: url('fonts/subset-LyftPro-UltraLightitalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-UltraLightitalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-UltraLightitalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-UltraLightitalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-UltraLightitalic.svg#LyftPro-UltraLightitalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-UltraLight.eot');
+    src: url('fonts/subset-LyftPro-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-UltraLight.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-UltraLight.woff') format('woff'),
+        url('fonts/subset-LyftPro-UltraLight.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-UltraLight.svg#LyftPro-UltraLight') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-SemiBold.eot');
+    src: url('fonts/subset-LyftPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-SemiBold.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-SemiBold.woff') format('woff'),
+        url('fonts/subset-LyftPro-SemiBold.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-SemiBold.svg#LyftPro-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Light.eot');
+    src: url('fonts/subset-LyftPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Light.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Light.woff') format('woff'),
+        url('fonts/subset-LyftPro-Light.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Light.svg#LyftPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-ExtraLight.eot');
+    src: url('fonts/subset-LyftPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-ExtraLight.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-ExtraLight.woff') format('woff'),
+        url('fonts/subset-LyftPro-ExtraLight.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-ExtraLight.svg#LyftPro-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-SemiBolditalic.eot');
+    src: url('fonts/subset-LyftPro-SemiBolditalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-SemiBolditalic.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-SemiBolditalic.woff') format('woff'),
+        url('fonts/subset-LyftPro-SemiBolditalic.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-SemiBolditalic.svg#LyftPro-SemiBolditalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lyft Pro UI';
+    src: url('fonts/subset-LyftPro-Black.eot');
+    src: url('fonts/subset-LyftPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/subset-LyftPro-Black.woff2') format('woff2'),
+        url('fonts/subset-LyftPro-Black.woff') format('woff'),
+        url('fonts/subset-LyftPro-Black.ttf') format('truetype'),
+        url('fonts/subset-LyftPro-Black.svg#LyftPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-regularitalic.1b90d21c.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-regularitalic.7d6a9503.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-regular.116fa118.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-regular.ffe614f0.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-mediumitalic.ddae57f9.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-mediumitalic.a213ecf5.woff) format("woff");
+    font-weight: 500;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-medium.4037cad5.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-medium.f7683815.woff) format("woff");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-bolditalic.7f94ad46.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-bolditalic.ba9caf42.woff) format("woff");
+    font-weight: 700;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url(https://cdn.lyft.com/tetris/proximanova-bold.17bedb5e.woff2) format("woff2"),url(https://cdn.lyft.com/tetris/proximanova-bold.c629b6a9.woff) format("woff");
+    font-weight: 700;
+    font-style: normal
+}
 
 /* Links */
 a, a:active, a:visited {
@@ -21,43 +357,53 @@ a:hover {
 /* Typography */
 body, select, input, textarea {
   color: #555;
-  font-family: Arial, sans-serif;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  letter-spacing: 0.045em;
+  color: black;
 }
 
 /* Buttons */
 .btn,
 .btn:visited,
 .btn:link {
-/*  text-transform: uppercase;*/
-/*  font-weight: 600;*/
-/*  border-radius: 3px;*/
-/*  font-family: Arial, sans-serif;*/
-/*  font-weight: 400;*/
-  background-color: #419BD9;
-  color: #fff;
-/*  border: 0;*/
+  border-radius: 4px;
   border-color: transparent;
+  padding: 0.5rem 1rem;
+  background-color: #FF00BF;
+  color: #fff;
+  font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  text-transform: none;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s;
 }
 .btn:hover, .button:hover, button:hover {
-  background-color: #419BD9;
+  background-color: #000;
 }
 .btn-primary, .btn-primary:visited, .btn-primary:link {
-  background-color: #0F3573;
+  background-color: black;
   color: #fff;
 /*  font-weight: 700;*/
 }
 .btn-primary:hover {
-  background-color: #0F3573;
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  border-style: solid;
 }
 .btn-secondary,
 .btn-secondary:visited,
 .btn-secondary:link {
-  background-color: #419BD9;
+  background-color: #FF00BF;
   color: #fff;
 }
 .btn-secondary:hover {
-  background-color: #419BD9;
-  color: #fff;
+  background-color: #000;
 }
 
 /* Forms */
@@ -77,7 +423,8 @@ input[type=time],
 input[type=url],
 input[type=week],
 textarea {
-  border-color: #ddd;
+  border: 1px solid #c5c5c5;
+  box-shadow: inset 0 0 3px rgba(0,0,0,0.15);
 }
 input:focus,
 textarea:focus {
@@ -109,33 +456,50 @@ a.reply-link.btn.btn-small {
 
 #site-header {
   color: inherit;
-  background-color: #0F3573;
+  background-color: white;
   min-height: 3em;
+  border-bottom: 1px solid #EFEFF1;
 }
 #site-title {
-  color: #eee;
-  font-family: Arial, sans-serif;
   font-weight: 700;
   text-shadow: 1px -1px 1px rgba(0,0,0,0.5);
-  max-width: 58%;
   margin: 0;
 }
 #site-title a:link,
 #site-title a:visited {
-  color: #fff;
-  font-size: 1em;
-  line-height: 1.2;
-  display: inline-block;
-  max-width: 8.5em;
+  font-size: 0.7rem;
+  line-height: 1;
+  display: block;
+  /* max-width: 8.5em; */
 }
-#site-title a:hover {
-  color: #fff;
+@media only screen and (min-width: 60em) {
+  #site-title a:link,
+  #site-title a:visited {
+    font-size: 1em;
+    line-height: 1.2;
+    display: inline-block;
+    /* max-width: 8.5em; */
+  }
 }
+
 .site-logo {
   display: inline-block;
-  max-height: 1.75em;
-  width: 90%;
-  margin-right: 1.5em;
+  margin: 0.1rem 3rem 0 0;
+  height: 1.5rem;
+}
+@media only screen and (min-width: 60em) {
+  .site-logo {
+    margin-top: 0.8rem;
+    margin-right: 0.6rem;
+    height: 2.85rem;
+  }
+}
+
+#site-title a.site-subtitle {
+  font-family: "Lyft Pro UI", "HelveticaNeue", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", sans-serif;
+  letter-spacing: 0.045em;
+  color: black;
+  text-shadow: none;
 }
 
 #babs-logo {
@@ -153,21 +517,24 @@ a.reply-link.btn.btn-small {
     margin-right: 0.5em;
     margin-left: -0.5em;
   }
-  #site-title a:link,
-  #site-title a:visited {
-    font-size: 1.75em;
-  }
-  .site-logo {
-    max-height: 2em;
+  #site-title a.site-subtitle {
+    vertical-align: 63%;
+    font-size: 1.4rem;
   }
 }
 
 /* Navigation Button */
 #nav-btn {
   font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
-  background: #0F3573;
-  color: #419BD9;
+  background: black;
+  color: white;
   text-shadow: -1px 1px 1px rgba(0,0,0,0.25);
+}
+
+@media only screen and (min-width: 60em) {
+  #pages-nav-container, #language-picker {
+    height: 3.5rem;
+  }
 }
 
 /* User Menu */
@@ -195,20 +562,39 @@ input.geocode-address-field {
 /* =Map
 -------------------------------------------------------------- */
 
+#map {
+  background: #E6E4E0;
+}
+
 /* Add Place Button */
 #add-place-btn-container {
-  background: #419BD9;
-  border-bottom: 1px solid #419BD9;
+  background: #EFEFF1;
+  border-bottom: 1px solid #EFEFF1;
+}
+
+#add-place {
+  font-size: 1.4rem;
+  letter-spacing: 0.045em;
+}
+
+@media only screen and (min-width: 60em) {
+  #add-place-btn-container .btn:link,
+  #add-place-btn-container .btn:visited {
+    padding: 0.84rem 4.2rem;
+  }
 }
 
 /* Drag Marker Instructions (for adding a new place) */
 .drag-marker-instructions,
 .drag-marker-warning {
-/*  background-color: rgba(240,240,0,0.2);*/
-/*  color: #444;*/
+  background-color: #f5f5f5;
+  color: black;
+  border: 1px solid #c5c5c5;
+  font-weight: normal;
 }
 .drag-marker-warning {
-/*  background-color: rgba(242, 206, 206, 0.8);*/
+  color: #ff00bf;
+  font-weight: bold;
 }
 
 /* Ajax Error Message */
@@ -245,7 +631,7 @@ input.geocode-address-field {
 a.close-btn {
   font-family: "Helvetica Neue", Arial, Helvetica, serif; /* Careful changin' this! */
   background: #fff;
-  color: #ff5e99;
+  color: black;
 }
 a.close-btn:hover {
   color: #cd2c67;
@@ -265,11 +651,16 @@ a.close-btn:hover {
 .user-support label {
   color: #fff;
   padding-left: 30px;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s;
 }
 .user-support input[type=checkbox]:checked ~ label {
+  background-image: url(images/heart-white.png);
+}
+.user-support:hover input[type=checkbox]:checked ~ label {
+  background-image: url(images/heart.png);
 }
 .user-support:hover label {
-  background-color: #419BD9;
+  background-color: black;
   color: #fff;
 }
 .sharing {
@@ -321,9 +712,32 @@ a.close-btn:hover {
 }
 
 /* Places */
-.place-header h1 {
-  font-size: 1.375em;
+.place-detail-station .place-header h1 {
+  font-size: 2.375em;
   margin-bottom: 0.75em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 60em) {
+  .place-detail-station .place-header h1 {
+    margin-top: 10rem;
+  }
+}
+
+#content.place-detail-station {
+  /* background-color: #C3EAE3; */
+}
+
+.place-detail-station a.close-btn {
+  /* background-color: #C3EAE3; */
+}
+
+.place-detail-station .place-submission-details {
+  display: none;
+}
+
+.place-detail-station .place-items {
+  display: none;
 }
 
 .response-date {
@@ -390,7 +804,8 @@ a.close-btn:hover {
 -------------------------------------------------------------- */
 
 #ticker {
-  background-color: gray;
+  background-color: #EFEFF1;
+  z-index: 100;
 }
 .legend {
   padding: 0.75em 0.75em 0.5em;
@@ -414,16 +829,24 @@ a.close-btn:hover {
 .legend li img {
   float: left;
   margin-right: 0.5em;
+  height: 1.9rem;
 }
 .recent-points a {
-  color: #fff;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  color: black;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  transition: color 0.2s,
+              background-color 0.2s;
 }
 .recent-points a:hover {
-  color: #fff;
-  background: darkgray;
-  border-color: rgba(0,0,0,0.1);
+  color: #FF00BF;
+  background: #F9F9FA;
+  border-color: transparent;
+  border-left-color: #EFEFF1;
+}
+.recent-points .avatar {
+  border-radius: 4px;
 }
 
 
@@ -454,8 +877,8 @@ a.close-btn:hover {
 -------------------------------------------------------------- */
 
 #colophon {
-  background-color: #0F3573;
-  color: #ddd;
+  background-color: black;
+  color: white;
 }
 
 /* Powered By - Please do not change these. */
@@ -546,7 +969,7 @@ a.shareabouts-logo:hover {
   }
 
   /* narrower content area */
-  .activity-enabled #content { left: 47%; }
+  .activity-enabled #content { left: 47%; z-index: 101; }
   .activity-enabled.content-visible #map-container { width: 47%; }
 
 }

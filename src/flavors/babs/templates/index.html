@@ -2,7 +2,7 @@
 {% load i18n %}
 
 {% block site-title %}
-<a href="/"><img src="{{ config.static_url }}css/images/FGB_Logo-white.png" class="site-logo" /></a><a href="/">{{ config.app.name }}</a>
+<a href="/"><img src="{{ config.static_url }}css/images/baywheels-logo-black.png" class="site-logo" /></a><a href="/" class="site-subtitle">{{ config.app.name }}</a>
 {% endblock %}
 
 {% block meta %}
@@ -44,8 +44,8 @@
 {% block sidebar %}
 <div class="legend">
   <ul class="unstyled-list">
-    <li class="existing"><img src="{{ config.static_url }}css/images/legend-existing.png" class="" /> Existing Station</li>
-    <li class="suggested"><img src="{{ config.static_url }}css/images/legend-suggested.png" class="" /> Suggested Station</li>
+    <li class="existing"><img src="{{ config.static_url }}css/images/markers/circle-bike-purple.png" class="legend-dot" /> Existing Station</li>
+    <li class="suggested"><img src="{{ config.static_url }}css/images/markers/circle-bike-gray.png" class="legend-dot" /> Suggested Station</li>
   </ul>
 </div>
 {% endblock %}
