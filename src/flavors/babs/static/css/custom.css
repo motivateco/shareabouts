@@ -725,11 +725,11 @@ a.close-btn:hover {
 }
 
 #content.place-detail-station {
-  background-color: #C3EAE3;
+  /* background-color: #C3EAE3; */
 }
 
 .place-detail-station a.close-btn {
-  background-color: #C3EAE3;
+  /* background-color: #C3EAE3; */
 }
 
 .place-detail-station .place-submission-details {
