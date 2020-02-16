@@ -9,7 +9,7 @@ SHAREABOUTS_FLAVOR = "hubway"
 
 HERE = os.path.dirname(__file__)
 
-DEBUG = True
+DEBUG = (os.environ.get('DEBUG', 'False').lower() == 'true')
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
